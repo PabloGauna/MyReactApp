@@ -17,8 +17,11 @@ class CommentsSection extends React.Component {
             comments.push(<Comment text={comment.text} author={comment.author}></Comment>)
         }
 
+        const commentsCounter = this.state.comments.length === 1 ? <div>({this.state.comments.length} Comment)</div> : <div>({this.state.comments.length} Comments)</div>
+
         return (
         <div>
+            {commentsCounter}
             {comments}
             <AddNewComment onAddNewComment={this.addNewComment}></AddNewComment>
         </div>
