@@ -17,7 +17,7 @@ class AddNewComment extends React.Component {
     }
 
     onAddClicked = ()=>{
-        this.props.onAddNewComment(this.state.newCommentText, this.state.newCommentAuthor)
+        this.props.addNewComment(this.state.newCommentText, this.state.newCommentAuthor)
     }
 
     render() {

@@ -22,7 +22,7 @@ class CommentsSection extends React.Component {
         <div>
             {commentsCounter}
             {comments}
-            <AddNewComment onAddNewComment={this.addNewComment}></AddNewComment>
+            <AddNewComment addNewComment={this.addNewComment}></AddNewComment>
         </div>
         )
     }
