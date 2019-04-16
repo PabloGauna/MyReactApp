@@ -1,5 +1,5 @@
 import React from "react"
-import Post from "./Post.jsx"
+import Post from "./components/Post.jsx"
 
 class App extends React.Component {
     render() {
