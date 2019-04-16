@@ -8,7 +8,7 @@ class Comment extends React.Component {
     render() {
         return (
             <div>
-                <h2>{this.props.author}</h2>
+                <b>{this.props.author}: </b>
                 {this.props.text}
             </div>
         )

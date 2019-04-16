@@ -1,7 +1,6 @@
 import React from "react"
 import Comment from "./Comment.js"
 import AddNewComment from "./AddNewComment.js";
-import { throws } from "assert";
 
 class CommentsSection extends React.Component {
     constructor(props) {
