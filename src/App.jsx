@@ -1,8 +1,12 @@
 import React from "react"
+import Post from "./Post.jsx"
 
 class App extends React.Component {
     render() {
-        return <h1>Hola Pablo!</h1>
+        return (
+            <Post>
+            </Post>
+        )
     }
 }
 
