@@ -1,9 +1,11 @@
 import React from "react"
-import dogImage from "../images/dog.jpg"
 
 class Photo extends React.Component {
+    constructor(props){
+        super(props);
+    }
     render() {
-        return <img src={dogImage}></img>
+        return <img src={this.props.image}></img>
     }
 }
 

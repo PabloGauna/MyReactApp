@@ -1,8 +1,17 @@
 import React from "react"
 
 class Comment extends React.Component {
+    constructor(props) {
+        super(props)
+    }
+
     render() {
-        return <div>This is a comment</div>
+        return (
+            <div>
+                <h2>{this.props.author}</h2>
+                {this.props.text}
+            </div>
+        )
     }
 }
 
