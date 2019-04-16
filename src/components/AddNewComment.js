@@ -1,5 +1,4 @@
 import React from "react"
-import { throws } from "assert";
 
 class AddNewComment extends React.Component {
     constructor(props) {

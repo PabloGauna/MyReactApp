@@ -17,8 +17,6 @@ class CommentsSection extends React.Component {
             comments.push(<Comment text={comment.text} author={comment.author}></Comment>)
         }
 
-        debugger;
-
         return (
         <div>
             {comments}
