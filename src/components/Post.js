@@ -1,6 +1,6 @@
 import React from "react"
-import Photo from "./Photo.jsx"
-import CommentsSection from "./CommentsSection.jsx"
+import Photo from "./Photo.js"
+import CommentsSection from "./CommentsSection.js"
 
 class Post extends React.Component {
     constructor(props) {

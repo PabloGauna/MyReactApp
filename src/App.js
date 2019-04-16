@@ -1,5 +1,5 @@
 import React from "react"
-import Post from "./components/Post.jsx"
+import Post from "./components/Post.js"
 import dogImage from "./images/dog.jpg"
 
 class App extends React.Component {
@@ -18,6 +18,14 @@ class App extends React.Component {
                     author: "Pablo Gauna",
                     text: "This is the second comment."
                 }]
+            },
+            {
+                id: "122312",
+                image: dogImage,
+                comments: [{
+                    author: "Pablo Gauna",
+                    text: "Yet another comment."
+                }]
             }]
         }
     }
@@ -26,7 +34,8 @@ class App extends React.Component {
 
         for (const post of this.state.posts) {
             posts.push(<Post postData={post} key={post.id}></Post>)
-          }
+        }
+
         return (
             <div>{posts}</div>           
         )
