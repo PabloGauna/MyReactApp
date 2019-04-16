@@ -13,18 +13,18 @@ class CommentsSection extends React.Component {
     render() {
         const comments = []
         for (const comment of this.state.comments) {
-            comments.push(<Comment text={comment.text} author={comment.author}></Comment>)
+            comments.push(<Comment text={comment.text} author={comment.author}></Comment>);
         }
 
-        const commentsCounter = this.state.comments.length === 1 ? <div>({this.state.comments.length} Comment)</div> : <div>({this.state.comments.length} Comments)</div>
+        const commentsCounter = this.state.comments.length === 1 ? <div>({this.state.comments.length} Comment)</div> : <div>({this.state.comments.length} Comments)</div>;
 
         return (
-        <div>
-            {commentsCounter}
-            {comments}
-            <AddNewComment addNewComment={this.addNewComment}></AddNewComment>
-        </div>
-        )
+            <div>
+                {commentsCounter}
+                {comments}
+                <AddNewComment addNewComment={this.addNewComment}></AddNewComment>
+            </div>
+        );
     }
 
     addNewComment = (text, author)=>{

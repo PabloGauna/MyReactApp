@@ -5,7 +5,7 @@ class Photo extends React.Component {
         super(props);
     }
     render() {
-        return <img src={this.props.image}></img>
+        return <img src={this.props.image}></img>;
     }
 }
 

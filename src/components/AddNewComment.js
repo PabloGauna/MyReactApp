@@ -2,7 +2,7 @@ import React from "react"
 
 class AddNewComment extends React.Component {
     constructor(props) {
-        super(props)
+        super(props);
 
         this.state = {
             newCommentAuthor: "Pablo Gauna",
@@ -17,7 +17,7 @@ class AddNewComment extends React.Component {
     }
 
     onAddClicked = ()=>{
-        this.props.addNewComment(this.state.newCommentText, this.state.newCommentAuthor)
+        this.props.addNewComment(this.state.newCommentText, this.state.newCommentAuthor);
     }
 
     render() {
@@ -26,7 +26,7 @@ class AddNewComment extends React.Component {
                 <input value={this.state.newCommentText} onChange={this.handleChange}></input>
                 <button onClick={this.onAddClicked}>Add</button>
             </div>
-        )
+        );
     }
 }
 
